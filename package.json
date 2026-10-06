@@ -1,0 +1,45 @@
+{
+  "name": "finora-mock-api",
+  "version": "1.0.0",
+  "description": "Finora mock HTTP API for frontend technical assessment",
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "test": "node scripts/run-tests.cjs",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "lint": "eslint \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/swagger": "^11.2.0",
+    "dotenv": "^16.6.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@nestjs/cli": "^11.0.10",
+    "@nestjs/testing": "^11.1.6",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "@types/supertest": "^6.0.3",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0",
+    "vitest": "^3.2.4"
+  }
+}
